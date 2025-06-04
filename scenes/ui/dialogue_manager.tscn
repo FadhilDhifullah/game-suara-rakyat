@@ -1,0 +1,167 @@
+[gd_scene load_steps=7 format=3 uid="uid://bkor3m1fcpgwc"]
+
+[ext_resource type="Script" uid="uid://lc43js7cjdi" path="res://scripts/dialogue_manager.gd" id="1_s662a"]
+[ext_resource type="Texture2D" uid="uid://dtu1tqtlfofrm" path="res://assets/game/characters/portrait/bu_ada.png" id="2_ga2qy"]
+[ext_resource type="Texture2D" uid="uid://bpkqrs4rhp8st" path="res://assets/game/characters/portrait/player.png" id="3_ga2qy"]
+
+[sub_resource type="Theme" id="Theme_yvpqg"]
+
+[sub_resource type="FontFile" id="FontFile_a235b"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/17/0/ascent = 0.0
+cache/0/17/0/descent = 0.0
+cache/0/17/0/underline_position = 0.0
+cache/0/17/0/underline_thickness = 0.0
+cache/0/17/0/scale = 1.0
+cache/0/18/0/ascent = 0.0
+cache/0/18/0/descent = 0.0
+cache/0/18/0/underline_position = 0.0
+cache/0/18/0/underline_thickness = 0.0
+cache/0/18/0/scale = 1.0
+cache/0/19/0/ascent = 0.0
+cache/0/19/0/descent = 0.0
+cache/0/19/0/underline_position = 0.0
+cache/0/19/0/underline_thickness = 0.0
+cache/0/19/0/scale = 1.0
+cache/0/20/0/ascent = 0.0
+cache/0/20/0/descent = 0.0
+cache/0/20/0/underline_position = 0.0
+cache/0/20/0/underline_thickness = 0.0
+cache/0/20/0/scale = 1.0
+cache/0/21/0/ascent = 0.0
+cache/0/21/0/descent = 0.0
+cache/0/21/0/underline_position = 0.0
+cache/0/21/0/underline_thickness = 0.0
+cache/0/21/0/scale = 1.0
+cache/0/22/0/ascent = 0.0
+cache/0/22/0/descent = 0.0
+cache/0/22/0/underline_position = 0.0
+cache/0/22/0/underline_thickness = 0.0
+cache/0/22/0/scale = 1.0
+cache/0/23/0/ascent = 0.0
+cache/0/23/0/descent = 0.0
+cache/0/23/0/underline_position = 0.0
+cache/0/23/0/underline_thickness = 0.0
+cache/0/23/0/scale = 1.0
+cache/0/24/0/ascent = 0.0
+cache/0/24/0/descent = 0.0
+cache/0/24/0/underline_position = 0.0
+cache/0/24/0/underline_thickness = 0.0
+cache/0/24/0/scale = 1.0
+cache/0/25/0/ascent = 0.0
+cache/0/25/0/descent = 0.0
+cache/0/25/0/underline_position = 0.0
+cache/0/25/0/underline_thickness = 0.0
+cache/0/25/0/scale = 1.0
+cache/0/26/0/ascent = 0.0
+cache/0/26/0/descent = 0.0
+cache/0/26/0/underline_position = 0.0
+cache/0/26/0/underline_thickness = 0.0
+cache/0/26/0/scale = 1.0
+cache/0/27/0/ascent = 0.0
+cache/0/27/0/descent = 0.0
+cache/0/27/0/underline_position = 0.0
+cache/0/27/0/underline_thickness = 0.0
+cache/0/27/0/scale = 1.0
+cache/0/28/0/ascent = 0.0
+cache/0/28/0/descent = 0.0
+cache/0/28/0/underline_position = 0.0
+cache/0/28/0/underline_thickness = 0.0
+cache/0/28/0/scale = 1.0
+cache/0/29/0/ascent = 0.0
+cache/0/29/0/descent = 0.0
+cache/0/29/0/underline_position = 0.0
+cache/0/29/0/underline_thickness = 0.0
+cache/0/29/0/scale = 1.0
+cache/0/30/0/ascent = 0.0
+cache/0/30/0/descent = 0.0
+cache/0/30/0/underline_position = 0.0
+cache/0/30/0/underline_thickness = 0.0
+cache/0/30/0/scale = 1.0
+cache/0/31/0/ascent = 0.0
+cache/0/31/0/descent = 0.0
+cache/0/31/0/underline_position = 0.0
+cache/0/31/0/underline_thickness = 0.0
+cache/0/31/0/scale = 1.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_xvu4w"]
+font = SubResource("FontFile_a235b")
+font_size = 31
+
+[node name="DialogueManager" type="CanvasLayer"]
+script = ExtResource("1_s662a")
+
+[node name="DialogPanel" type="Panel" parent="."]
+z_index = 1
+offset_left = 3.0
+offset_top = 406.0
+offset_right = 1151.0
+offset_bottom = 654.0
+theme = SubResource("Theme_yvpqg")
+
+[node name="NameLabel" type="Label" parent="DialogPanel"]
+layout_mode = 0
+offset_left = 345.0
+offset_top = 2.0
+offset_right = 443.0
+offset_bottom = 44.0
+text = "Bu Ada"
+label_settings = SubResource("LabelSettings_xvu4w")
+
+[node name="PortraitNPC" type="TextureRect" parent="DialogPanel"]
+z_index = -1
+layout_mode = 0
+offset_left = 824.0
+offset_top = -282.0
+offset_right = 1182.0
+offset_bottom = 252.0
+texture = ExtResource("2_ga2qy")
+expand_mode = 1
+
+[node name="DialogText" type="RichTextLabel" parent="DialogPanel"]
+layout_mode = 0
+offset_left = 348.0
+offset_top = 67.0
+offset_right = 866.0
+offset_bottom = 198.0
+
+[node name="ButtonNext" type="Button" parent="DialogPanel"]
+layout_mode = 0
+offset_left = 738.0
+offset_top = 203.0
+offset_right = 806.0
+offset_bottom = 234.0
+text = "Next >>"
+
+[node name="ChoicesContainer" type="HBoxContainer" parent="DialogPanel"]
+layout_mode = 0
+offset_left = 439.0
+offset_top = 149.0
+offset_right = 479.0
+offset_bottom = 189.0
+alignment = 1
+
+[node name="ButtonCancel" type="Button" parent="DialogPanel"]
+layout_mode = 0
+offset_left = 336.0
+offset_top = 207.0
+offset_right = 384.0
+offset_bottom = 238.0
+text = "Batal"
+
+[node name="PortraitPlayer" type="TextureRect" parent="DialogPanel"]
+z_index = -1
+layout_mode = 0
+offset_left = -3.0
+offset_top = -257.0
+offset_right = 337.0
+offset_bottom = 247.0
+texture = ExtResource("3_ga2qy")
+expand_mode = 1

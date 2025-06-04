@@ -1,0 +1,152 @@
+[
+  {
+	"type": "text",
+	"speaker": "Bu Ada",
+	"text": "Pak, situasi di pabrik kami sudah di luar batas wajar. Manajemen memaksa kami bekerja lembur tanpa perhitungan upah jelas. Upah pokok juga tidak pernah naik selama bertahun-tahun. Ini eksploitasi terang-terangan.",
+	"next": 1
+  },
+  {
+	"type": "text",
+	"speaker": "Player",
+	"text": "Jadi perusahaan tidak menghitung lembur sesuai aturan, begitu Bu?",
+	"next": 2
+  },
+  {
+	"type": "text",
+	"speaker": "Bu Ada",
+	"text": "Tidak. Mereka menganggap lembur sebagai kewajiban tambahan. Kami diancam pemecatan kalau menolak.",
+	"next": 3
+  },
+  {
+	"type": "text",
+	"speaker": "Player",
+	"text": "Apakah kalian sudah pernah mengadu ke pihak terkait?",
+	"next": 4
+  },
+  {
+	"type": "text",
+	"speaker": "Bu Ada",
+	"text": "Sudah, tapi responsnya lambat. Manajemen selalu berdalih demi menjaga daya saing dan alasan klasik semacam itu. Kami pekerja tidak pernah dianggap penting.",
+	"next": 5
+  },
+  {
+	"type": "text",
+	"speaker": "Player",
+	"text": "Dampaknya terhadap kehidupan pribadi Ibu?",
+	"next": 6
+  },
+  {
+	"type": "text",
+	"speaker": "Bu Ada",
+	"text": "Kehilangan waktu bersama keluarga, stres, kelelahan kronis. Kami bukan robot. Kami hanya ingin hak kami dipenuhi.",
+	"next": 7
+  },
+  {
+	"type": "choice",
+	"speaker": "Player",
+	"text": "Apa yang akan Anda lakukan sebagai calon pemimpin?",
+	"choices": [
+	  { "label": "Janji perlindungan pekerja", "next": 8 },
+	  { "label": "Solusi bertahap untuk semua", "next": 13 },
+	  { "label": "Bantuan pribadi sekarang", "next": 18 }
+	]
+  },
+
+
+  {
+	"type": "text",
+	"speaker": "Player",
+	"text": "Saya sepenuhnya setuju dengan Ibu, ini tidak boleh dibiarkan terus. Jika saya terpilih nanti, kebijakan perlindungan hak pekerja akan diperketat. Lembur harus dibayar sesuai aturan, dan upah minimum akan selalu disesuaikan tiap tahun.",
+	"next": 9
+  },
+  {
+	"type": "text",
+	"speaker": "Bu Ada",
+	"text": "Itu yang kami inginkan dari dulu. Semoga janji ini tidak hanya ucapan kosong belaka.",
+	"next": 10
+  },
+  {
+	"type": "text",
+	"speaker": "Player",
+	"text": "Saya tidak pernah berjanji tanpa rencana konkret. Yang saya butuhkan hanya kepercayaan Ibu dan rekan-rekan pekerja lainnya.",
+	"next": 11
+  },
+  {
+	"type": "text",
+	"speaker": "Bu Ada",
+	"text": "Kalau janji itu ditepati, kami akan percaya.",
+	"next": 12
+  },
+  {
+	"type": "end"
+  },
+
+  {
+	"type": "text",
+	"speaker": "Player",
+	"text": "Bu Ada, saya ngerti kondisi Ibu susah. Tapi perusahaan juga sedang berusaha bertahan di tengah persaingan ketat. Kalau pabrik tutup karena biaya operasional tinggi, pekerja juga yang kehilangan pekerjaan. Untuk saat ini, semua harus sedikit berkorban.",
+	"next": 14
+  },
+  {
+	"type": "text",
+	"speaker": "Bu Ada",
+	"text": "Jangka panjang untuk siapa, Pak? Untuk kami atau hanya keuntungan manajemen?",
+	"next": 15
+  },
+  {
+	"type": "text",
+	"speaker": "Player",
+	"text": "Tentu untuk semua. Nanti jika saya terpilih, saya pastikan pemerintah akan mencari solusi bertahap agar kedua pihak mendapatkan manfaat.",
+	"next": 16
+  },
+  {
+	"type": "text",
+	"speaker": "Bu Ada",
+	"text": "Saya dengar janji itu sudah terlalu sering. Tapi kami lihat saja nanti.",
+	"next": 17
+  },
+  {
+	"type": "end"
+  },
+
+
+  {
+	"type": "text",
+	"speaker": "Player",
+	"text": "Saya tahu situasi ini sulit, Bu Ada. Untuk sementara waktu, saya bisa bantu secara pribadi dulu. Tidak banyak memang, tapi mungkin bisa sedikit mengurangi tekanan selama masa kampanye ini.",
+	"next": 19
+  },
+  {
+	"type": "text",
+	"speaker": "Bu Ada",
+	"text": "Menarik sekali permainanmu, Pak. Tapi lain kali lebih hati-hati lagi. Ada banyak mata-mata di sini yang mengawasi gerak-gerik Anda.",
+	"next": 20
+  },
+  {
+	"type": "text",
+	"speaker": "Player",
+	"text": "Maksud Ibu?",
+	"next": 21
+  },
+  {
+	"type": "text",
+	"speaker": "Bu Ada",
+	"text": "Maksud saya jelas, Pak. Jangan terlalu ceroboh dengan tawaran uang seperti ini. Tapi baiklah, anggap ini sebagai bagian dari kompensasi yang selama ini kami tunggu. Saya terima tawaran Anda.",
+	"next": 22
+  },
+  {
+	"type": "text",
+	"speaker": "Player",
+	"text": "Ini hanya solusi sementara, Bu. Jika saya dipercaya nanti, saya janji akan ada solusi permanen.",
+	"next": 23
+  },
+  {
+	"type": "text",
+	"speaker": "Bu Ada",
+	"text": "Saya pegang janji Anda. Tapi saya harap ini tidak menjadi kebiasaan.",
+	"next": 24
+  },
+  {
+	"type": "end"
+  }
+]

@@ -1,0 +1,142 @@
+[
+  {
+    "type": "text",
+    "speaker": "Pak Janggar",
+    "text": "Begini Pak, kami pedagang pasar lagi resah banget sekarang. Pemerintah daerah katanya mau revitalisasi pasar ini. Bagus sih rencananya, tapi lokasi sementara yang disiapkan itu jauh sekali. Pelanggan pasti nggak bakal datang.",
+    "next": 1
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Memangnya jauh sekali ya, Pak, lokasinya?",
+    "next": 2
+  },
+  {
+    "type": "text",
+    "speaker": "Pak Janggar",
+    "text": "Iya Pak, jauh. Kalau sekarang pelanggan datang gampang, dekat pemukiman. Kalau dipindah jauh begitu, siapa mau beli daging saya ke tempat yang aksesnya susah? Bisa tutup kios saya.",
+    "next": 3
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Jadi menurut Bapak rencana pemerintah daerah ini nggak memperhatikan nasib pedagang kecil ya?",
+    "next": 4
+  },
+  {
+    "type": "text",
+    "speaker": "Pak Janggar",
+    "text": "Betul, Pak. Kami cuma dikasih tau harus pindah sementara aja. Katanya pasar bakal lebih modern nanti, tapi sementara menunggu itu selesai, penghasilan kami pasti turun drastis.",
+    "next": 5
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Berarti sekarang harapan Bapak apa?",
+    "next": 6
+  },
+  {
+    "type": "text",
+    "speaker": "Pak Janggar",
+    "text": "Ya, lokasi sementara ini bisa lebih dekatlah Pak, jangan sampai kami kehilangan pelanggan langganan.",
+    "next": 7
+  },
+  {
+    "type": "choice",
+    "speaker": "Player",
+    "text": "Apa yang akan Bapak lakukan jika saya terpilih nanti?",
+    "choices": [
+      { "label": "Janji lokasi sementara dekat (Populis)", "next": 8 },
+      { "label": "Janjikan manfaat jangka panjang (Elitis)", "next": 13 },
+      { "label": "Bantu uang sementara (Politik Uang)", "next": 18 }
+    ]
+  },
+
+
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Kalau saya dipercaya jadi pemimpin nanti, Pak, saya pastikan pasar sementara itu dekat dengan lokasi sekarang. Biar pelanggan nggak kabur dan dagangan Bapak tetap lancar.",
+    "next": 9
+  },
+  {
+    "type": "text",
+    "speaker": "Pak Janggar",
+    "text": "Nah itu yang kami mau dengar, Pak. Kalau Bapak janji gitu, saya dan pedagang lain siap dukung penuh. Yang penting dagangan kami tetap laku.",
+    "next": 10
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Saya tahu betul, Pak, pedagang kecil seperti Bapak ini yang harusnya diprioritaskan pemerintah. Revitalisasi boleh, tapi jangan sampai merugikan pedagang.",
+    "next": 11
+  },
+  {
+    "type": "text",
+    "speaker": "Pak Janggar",
+    "text": "Setuju banget, Pak. Saya yakin pedagang lain juga bakal setuju dan dukung Bapak.",
+    "next": 12
+  },
+  {
+    "type": "end"
+  },
+
+ 
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Pak Janggar, saya paham masalahnya. Tapi menurut saya revitalisasi pasar ini penting sekali. Kalau pasar sudah modern, nanti pelanggan akan bertambah. Memang sementara pedagang harus sabar dulu, tapi nanti dampaknya sangat bagus untuk ekonomi daerah kita.",
+    "next": 14
+  },
+  {
+    "type": "text",
+    "speaker": "Pak Janggar",
+    "text": "Iya, kami ngerti itu Pak. Tapi sementara nunggu selesai, bagaimana kami makan sehari-hari kalau pelanggan nggak datang?",
+    "next": 15
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Memang berat, Pak. Tapi ini pengorbanan sementara demi manfaat jangka panjang yang lebih besar. Nanti kalau saya terpilih, saya pastikan setelah revitalisasi selesai, fasilitas pasar akan sangat nyaman, pembeli akan jauh lebih ramai.",
+    "next": 16
+  },
+  {
+    "type": "text",
+    "speaker": "Pak Janggar",
+    "text": "Ya sudahlah Pak, mudah-mudahan bener ya pasar nanti ramai lagi. Kami percaya aja sama janji Bapak.",
+    "next": 17
+  },
+  {
+    "type": "end"
+  },
+
+ 
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Begini aja, Pak Janggar. Sambil nunggu kebijakan yang pasti, saya bantu dulu deh sedikit buat Bapak dan keluarga. Kan situasi begini memang berat. Yang penting Bapak tenang dulu selama masa kampanye ini.",
+    "next": 19
+  },
+  {
+    "type": "text",
+    "speaker": "Pak Janggar",
+    "text": "Wah, terima kasih banyak, Pak. Lumayan ini bisa bantu sementara. Kalau kayak begini mah kami jadi agak tenang, nggak terlalu khawatir banget.",
+    "next": 20
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Iya Pak, nanti kalau terpilih saya pasti cari solusi yang baik buat semua pedagang. Yang penting Bapak dan teman-teman sekarang ini sabar dulu, ya?",
+    "next": 21
+  },
+  {
+    "type": "text",
+    "speaker": "Pak Janggar",
+    "text": "Siap Pak. Pokoknya kalau ada pemilihan nanti saya pasti ingat Bapak. Bapak udah bantu kami sekarang, pasti kami juga bantu Bapak nanti.",
+    "next": 22
+  },
+  {
+    "type": "end"
+  }
+]
+

@@ -1,0 +1,122 @@
+[
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Menurut Bapak, apa yang jadi masalah utama dalam perubahan sistem ini?",
+    "next": 1
+  },
+  {
+    "type": "text",
+    "speaker": "Pak Aries",
+    "text": "Banyak yang masih ingin zona nyaman. Kalau sistem merit dan evaluasi diterapkan ketat, pasti ada yang tersisih. Tapi begitulah, negara butuh birokrasi yang ramping dan mampu bersaing. Kadang, keputusan sulit harus diambil.",
+    "next": 2
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Bagaimana dengan pegawai honorer atau pegawai lama yang merasa terpinggirkan?",
+    "next": 3
+  },
+  {
+    "type": "text",
+    "speaker": "Pak Aries",
+    "text": "Itulah risikonya, Pak. Kita tidak bisa terus memanjakan semua orang. Pemerintah harus berani membuat keputusan rasional demi kinerja yang lebih baik.",
+    "next": 4
+  },
+  {
+    "type": "choice",
+    "speaker": "Player",
+    "text": "Apa yang akan Bapak lakukan atau harapkan dari perubahan ini?",
+    "choices": [
+      { "label": "Dukung penuh reformasi & merit (Elitis)", "next": 5 },
+      { "label": "Jamin pegawai lama tetap diperhatikan (Populis)", "next": 10 },
+      { "label": "Tawarkan insentif politik uang", "next": 15 }
+    ]
+  },
+
+  
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Saya sangat setuju, Pak Aries. Birokrasi kita memang harus berubah. Kalau mau pelayanan publik naik kelas, tidak bisa lagi mengandalkan sistem lama yang kurang produktif. Saya mendukung penuh reformasi, digitalisasi, dan sistem merit.",
+    "next": 6
+  },
+  {
+    "type": "text",
+    "speaker": "Pak Aries",
+    "text": "Ini baru pemimpin yang saya cari. Jangan ragu membuat kebijakan tegas. Yang tak mampu menyesuaikan, ya harus siap digantikan. Pemerintah harus diisi orang-orang terbaik, bukan sekadar yang senior.",
+    "next": 7
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Nanti, saya akan prioritaskan pengembangan SDM, pelatihan, dan evaluasi kinerja berbasis hasil nyata. Negara tidak boleh kalah dengan sektor swasta dalam melayani masyarakat.",
+    "next": 8
+  },
+  {
+    "type": "text",
+    "speaker": "Pak Aries",
+    "text": "Saya siap mendukung kebijakan seperti itu. Silakan gunakan saya jika butuh testimoni birokrat yang progresif.",
+    "next": 9
+  },
+  {
+    "type": "end"
+  },
+
+
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Pak Aries, saya paham keresahan Bapak dan pegawai lain. Tapi saya ingin memastikan, siapapun yang sudah mengabdi lama tidak akan disingkirkan begitu saja. Saya akan perhatikan kesejahteraan pegawai, baik yang baru maupun lama.",
+    "next": 11
+  },
+  {
+    "type": "text",
+    "speaker": "Pak Aries",
+    "text": "Baik, Pak. Tapi kalau hanya fokus pada rasa aman, perubahan akan jalan di tempat. Saya harap Bapak juga pertimbangkan kualitas, bukan sekadar loyalitas.",
+    "next": 12
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Tentu, saya akan cari jalan tengah agar perubahan berjalan tanpa mengorbankan hak pegawai.",
+    "next": 13
+  },
+  {
+    "type": "text",
+    "speaker": "Pak Aries",
+    "text": "Saya tunggu aksi nyatanya, bukan sekadar janji.",
+    "next": 14
+  },
+  {
+    "type": "end"
+  },
+
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Pak Aries, kalau Bapak dan rekan-rekan ASN mau mendukung saya nanti, saya pastikan ada insentif khusus selama masa kampanye ini. Anggap saja sebagai bentuk terima kasih atas loyalitas Bapak.",
+    "next": 16
+  },
+  {
+    "type": "text",
+    "speaker": "Pak Aries",
+    "text": "Terima kasih, Pak. Tapi saya percaya birokrasi yang sehat tidak dibangun dengan cara-cara seperti itu. Jika Bapak ingin dukungan tulus, tunjukkan saja program nyata, bukan sekadar amplop.",
+    "next": 17
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Baik, Pak. Saya mengerti integritas itu penting bagi Bapak.",
+    "next": 18
+  },
+  {
+    "type": "text",
+    "speaker": "Pak Aries",
+    "text": "Dan itu yang saya jaga. Politik uang hanya memperpanjang budaya lama yang ingin kita ubah bersama.",
+    "next": 19
+  },
+  {
+    "type": "end"
+  }
+]
