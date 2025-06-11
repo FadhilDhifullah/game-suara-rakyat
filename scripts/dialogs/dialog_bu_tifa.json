@@ -1,0 +1,115 @@
+[
+  {
+    "type": "text",
+    "speaker": "Ibu Tifa",
+    "text": "Pak, UMKM di daerah ini jumlahnya ribuan, tapi tantangannya juga makin berat. Bahan baku mahal, akses modal susah, kadang pemasaran pun mentok di lingkup lokal saja.",
+    "next": 1
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Apa yang paling jadi beban untuk pelaku UMKM saat ini, Bu?",
+    "next": 2
+  },
+  {
+    "type": "text",
+    "speaker": "Ibu Tifa",
+    "text": "Yang utama itu permodalan. Banyak anggota kami sudah punya produk bagus, tapi terhambat karena pinjaman bank sulit, bunga tinggi, dan prosesnya lama. Di sisi lain, pemasaran digital juga butuh dukungan pelatihan dan jaringan.",
+    "next": 3
+  },
+  {
+    "type": "choice",
+    "speaker": "Player",
+    "text": "Langkah apa yang paling Bu harapkan dari pemerintah?",
+    "choices": [
+      { "label": "Permudah akses modal & subsidi bunga (Populis)", "next": 4, "style":"populis" },
+      { "label": "Dorong UMKM naik kelas, insentif pajak (Elitis)", "next": 10,"style":"elitis" },
+      { "label": "Bantu dana/insentif langsung (Politik Uang)", "next": 16, "style":"politik uang" }
+    ]
+  },
+
+ 
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Bu, kalau saya dipercaya nanti, UMKM akan jadi prioritas. Saya akan memperbesar subsidi bunga pinjaman, tambah dana hibah, dan permudah akses perizinan. Setiap UMKM harus bisa dapat modal tanpa perlu jaminan yang berat.",
+    "next": 5
+  },
+  {
+    "type": "text",
+    "speaker": "Ibu Tifa",
+    "text": "Kalau programnya seperti itu, saya rasa pelaku usaha di sini bisa bernafas lega. Banyak yang hanya butuh modal putaran kecil untuk bertahan dan berkembang. Bantuan yang tepat akan langsung terasa dampaknya ke keluarga mereka.",
+    "next": 6
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Saya ingin UMKM jadi tulang punggung ekonomi daerah, bukan cuma slogan.",
+    "next": 7
+  },
+  {
+    "type": "text",
+    "speaker": "Ibu Tifa",
+    "text": "Kalau pelaku UMKM diberi ruang dan didukung, saya yakin banyak yang bisa tumbuh jadi usaha besar ke depan.",
+    "next": 8
+  },
+  {
+    "type": "end"
+  },
+
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Bu Tifa, saya paham UMKM sangat penting di Indonesia. Tapi negara ini tidak akan maju kalau ekonomi hanya bergantung pada usaha mikro yang tidak tercatat pajak dan kontribusinya terbatas. Saya ingin mendorong UMKM naik kelas—legal, terdaftar, dan berani ekspansi. Mulai dari pelatihan keuangan, sertifikasi, sampai insentif pajak untuk UMKM yang bertumbuh jadi perusahaan menengah. Kalau UMKM kita makin besar dan taat hukum, negara juga makin kuat.",
+    "next": 11
+  },
+  {
+    "type": "text",
+    "speaker": "Ibu Tifa",
+    "text": "Saya sepakat, Pak. Di lapangan memang banyak pelaku usaha yang usahanya hanya sebatas 'cukup makan'. Mereka sering enggan formalitas karena takut birokrasi. Tapi kalau pemerintah memberi insentif, memudahkan sertifikasi, dan mengapresiasi UMKM yang bertumbuh, saya yakin banyak yang siap melangkah lebih jauh.",
+    "next": 12
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Saya ingin UMKM bukan hanya banyak, tapi juga kuat, terintegrasi dalam sistem ekonomi nasional. Target saya, pelaku usaha di daerah ini bisa menembus pasar nasional, membayar pajak dengan ringan, dan menikmati akses fasilitas negara.",
+    "next": 13
+  },
+  {
+    "type": "text",
+    "speaker": "Ibu Tifa",
+    "text": "Itu tujuan yang sangat jelas, Pak. Jika memang jalurnya dipermudah dan ada penghargaan nyata, saya yakin banyak UMKM siap mengikuti—dan ekonomi daerah pasti ikut berkembang pesat.",
+    "next": 14
+  },
+  {
+    "type": "end"
+  },
+
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Bu Tifa, saya bisa bantu dana tunai atau program insentif khusus buat kelompok UMKM, asal dukungan ke saya juga solid di lingkungan Ibu.",
+    "next": 17
+  },
+  {
+    "type": "text",
+    "speaker": "Ibu Tifa",
+    "text": "Kalau bantuannya memang untuk kemajuan bersama, tentu akan sangat membantu. Saya akan sampaikan ke para anggota. Mereka pasti butuh suntikan modal baru.",
+    "next": 18
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Saya ingin UMKM di daerah ini benar-benar bisa merasakan manfaat konkret.",
+    "next": 19
+  },
+  {
+    "type": "text",
+    "speaker": "Ibu Tifa",
+    "text": "Terima kasih, Pak. Saya harap dukungan pemerintah ke depannya juga terus berlanjut, bukan cuma di masa kampanye.",
+    "next": 20
+  },
+  {
+    "type": "end"
+  }
+]

@@ -1,0 +1,116 @@
+[
+  {
+    "type": "text",
+    "speaker": "Gus Fattah",
+    "text": "Pak, pesantren ini sejak dulu jadi rujukan banyak keluarga. Setiap tahun jumlah santri bertambah, fasilitas harus terus kami kembangkan. Tapi dalam beberapa tahun terakhir, biaya operasional makin berat—sementara bantuan dari pemerintah terasa makin kecil dibanding kebutuhan riil di lapangan.",
+    "next": 1
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Jadi yang paling berat sekarang soal dana pengembangan dan operasional, ya Gus?",
+    "next": 2
+  },
+  {
+    "type": "text",
+    "speaker": "Gus Fattah",
+    "text": "Betul, Pak. Kami harus penuhi kebutuhan asrama, sarana belajar, beasiswa anak yatim, juga gaji guru. Banyak yang mengira pesantren besar itu pasti makmur, padahal tekanan dan tanggung jawab sosialnya juga jauh lebih besar. Kadang aturan baru justru mempersulit aliran dana hibah. Kalau dibiarkan, pesantren seperti kami bisa kesulitan menjaga mutu.",
+    "next": 3
+  },
+  {
+    "type": "choice",
+    "speaker": "Player",
+    "text": "Menurut Gus, apa yang paling dibutuhkan pesantren seperti ini?",
+    "choices": [
+      { "label": "Prioritaskan hibah & bantuan langsung ", "next": 4, "style":"populis" },
+      { "label": "Dorong inovasi & kolaborasi global", "next": 10, "style":"elitis" },
+      { "label": "Bantu dana pembangunan sekarang", "next": 16, "style":"politik uang" }
+    ]
+  },
+
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Gus, saya tahu pesantren seperti ini bukan sekadar tempat belajar agama, tapi benteng moral masyarakat. Kalau saya mendapat kepercayaan nanti, saya akan pastikan dana hibah untuk pesantren dinaikkan dan disalurkan langsung, tanpa birokrasi berbelit. Bantuan infrastruktur, beasiswa, dan tunjangan guru pesantren jadi prioritas.",
+    "next": 5
+  },
+  {
+    "type": "text",
+    "speaker": "Gus Fattah",
+    "text": "Kalau ada pemimpin yang mau memperjuangkan hibah khusus pesantren, saya yakin dunia pendidikan keagamaan di sini akan makin kuat. Dengan bantuan yang tepat sasaran, pesantren bisa terus berkembang dan santri lebih semangat belajar.",
+    "next": 6
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Saya ingin perubahan itu terasa langsung—mulai dari renovasi asrama, peralatan belajar, sampai kesejahteraan para pengajar.",
+    "next": 7
+  },
+  {
+    "type": "text",
+    "speaker": "Gus Fattah",
+    "text": "Santri dan masyarakat pasti akan sangat terbantu. Dukungan seperti ini jadi harapan banyak keluarga di sekitar pesantren.",
+    "next": 8
+  },
+  {
+    "type": "end"
+  },
+
+ 
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Gus, pesantren hari ini harus bisa beradaptasi dengan tantangan global. Saya ingin pesantren besar seperti ini jadi pusat inovasi—punya laboratorium, kelas internasional, program pertukaran pelajar, dan riset kolaboratif dengan universitas. Dana riset dan fasilitas digital akan saya upayakan seperti sekolah negeri unggulan.",
+    "next": 11
+  },
+  {
+    "type": "text",
+    "speaker": "Gus Fattah",
+    "text": "Wawasan seperti itu memang dibutuhkan di zaman sekarang, Pak. Banyak santri kami punya bakat di bidang teknologi, saintek, bahkan bahasa asing. Kalau akses dan fasilitas dibuka, pesantren ini bisa melahirkan pemimpin-pemimpin masa depan di segala bidang.",
+    "next": 12
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Saya ingin lulusan pesantren jadi contoh: alim, cerdas, juga siap bersaing secara global.",
+    "next": 13
+  },
+  {
+    "type": "text",
+    "speaker": "Gus Fattah",
+    "text": "Kalau memang programnya terbuka dan mendukung potensi santri, kami siap terlibat dan berkolaborasi.",
+    "next": 14
+  },
+  {
+    "type": "end"
+  },
+
+
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Gus, saya tahu pembangunan pesantren tak pernah murah. Kalau butuh dana pembangunan asrama, ruang kelas, atau beasiswa santri, saya bisa bantu langsung—asal pesantren dan jamaah Gus ikut mendukung saya dalam pemilihan.",
+    "next": 17
+  },
+  {
+    "type": "text",
+    "speaker": "Gus Fattah",
+    "text": "Kalau bantuannya memang nyata dan untuk kemaslahatan pesantren, saya terima, Pak. Dukungan dari pesantren juga tidak hanya suara, tapi doa dan kepercayaan. Yang penting, niat baiknya bisa dirasakan santri dan masyarakat.",
+    "next": 18
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Insyaallah, Gus. Bantuan ini jadi bukti komitmen, bukan sekadar janji.",
+    "next": 19
+  },
+  {
+    "type": "text",
+    "speaker": "Gus Fattah",
+    "text": "Kalau niatnya untuk kemajuan bersama, saya yakin semua akan berjalan lancar.",
+    "next": 20
+  },
+  {
+    "type": "end"
+  }
+]

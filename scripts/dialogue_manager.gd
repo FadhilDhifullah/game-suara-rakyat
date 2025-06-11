@@ -38,6 +38,23 @@ func start_dialogue(npc_node: Node) -> void:
 	button_cancel.visible = true
 	_show_entry()
 
+func show_rejection(text: String, npc_node: Node = null) -> void:
+	if npc_node != null:
+		current_npc = npc_node
+	if current_npc:
+		portrait_npc.texture = current_npc.npc_texture
+		name_label.text = current_npc.name
+	else:
+		name_label.text = "???"
+		portrait_npc.texture = null
+	panel.visible = true
+	button_next.visible = false
+	button_cancel.visible = true
+	choices_container.visible = false
+	dialog_text.text = text
+	portrait_npc.modulate = Color(1,1,1,1)
+	portrait_player.modulate = Color(0.5,0.5,0.5,1)
+
 # Helper untuk cek nama speaker dan nama node NPC, tanpa peduli spasi/underscore/case
 func is_npc_speaker(entry_speaker: String) -> bool:
 	var npc_name_plain = current_npc.name.to_lower().replace("_", "").replace(" ", "")
@@ -121,11 +138,32 @@ func _populate_choices(choices_array: Array) -> void:
 func _on_choice_pressed(choice_idx: int) -> void:
 	var entry = data[index]
 	var chosen = entry["choices"][choice_idx]
+
+	# --- AMBIL STYLE PILIHAN DAN TANDAI KE GameState ---
+	var chosen_style = chosen["style"] if chosen.has("style") else "unknown"
+	var bribe_success = true
+	# Kalau style politik_uang, bisa random sukses/gagal (opsional)
+	if chosen_style == "politik_uang":
+		var meta = GameState.NPC_META.get(current_npc.name, null)
+		if meta and meta.has("bribe"):
+			var bribe_chance = meta["bribe"]
+			bribe_success = randf() < bribe_chance
+	GameState.add_result_to_player(current_npc.name, chosen_style, bribe_success)
+	# ---------------------------------------------------
+
 	if chosen.has("next"):
 		index = int(chosen["next"])
 		_show_entry()
 	else:
 		_end_dialogue()
+
+
+	if chosen.has("next"):
+		index = int(chosen["next"])
+		_show_entry()
+	else:
+		_end_dialogue()
+
 
 func _end_dialogue() -> void:
 	panel.visible = false

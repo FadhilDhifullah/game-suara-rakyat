@@ -46,9 +46,9 @@
     "speaker": "Player",
     "text": "Apa yang akan Bapak lakukan jika saya terpilih nanti?",
     "choices": [
-      { "label": "Janji lokasi sementara dekat (Populis)", "next": 8 },
-      { "label": "Janjikan manfaat jangka panjang (Elitis)", "next": 13 },
-      { "label": "Bantu uang sementara (Politik Uang)", "next": 18 }
+      { "label": "Janji lokasi sementara dekat", "next": 8, "style":"populis" },
+      { "label": "Janjikan manfaat jangka panjang", "next": 13, "style":"elitis" },
+      { "label": "Bantu uang sementara", "next": 18, "style":"politik uang" }
     ]
   },
 

@@ -28,9 +28,9 @@
     "speaker": "Player",
     "text": "Apa yang akan Bapak lakukan atau harapkan dari perubahan ini?",
     "choices": [
-      { "label": "Dukung penuh reformasi & merit (Elitis)", "next": 5 },
-      { "label": "Jamin pegawai lama tetap diperhatikan (Populis)", "next": 10 },
-      { "label": "Tawarkan insentif politik uang", "next": 15 }
+      { "label": "Dukung penuh reformasi & merit", "next": 5, "style":"populis" },
+      { "label": "Jamin pegawai lama tetap diperhatikan", "next": 10, "style":"elitis" },
+      { "label": "Tawarkan insentif politik uang", "next": 15, "style":"politik uang" }
     ]
   },
 

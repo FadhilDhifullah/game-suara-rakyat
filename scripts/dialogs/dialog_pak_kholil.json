@@ -1,0 +1,177 @@
+[
+  {
+    "type": "text",
+    "speaker": "Pak Kholil",
+    "text": "Aduh, Pak… bingung saya sekarang. Sawah yang sudah puluhan tahun saya garap bareng keluarga dan tetangga di sini katanya mau diambil alih PT. Kami disuruh kosongin tanpa ada kejelasan penggantian apapun.",
+    "next": 1
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Lho, kenapa bisa begitu, Pak? Memangnya sawah ini milik siapa?",
+    "next": 2
+  },
+  {
+    "type": "text",
+    "speaker": "Pak Kholil",
+    "text": "Katanya sih milik negara, tapi kami yang garap dari dulu, tanam padi tiap musim hujan kemarau. Dulu PT itu pegang HGU, tapi katanya masa izinnya sudah habis. Sekarang malah mau diperpanjang lagi dan kami harus pergi.",
+    "next": 3
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Pihak PT sudah ketemu Bapak dan warga sini?",
+    "next": 4
+  },
+  {
+    "type": "text",
+    "speaker": "Pak Kholil",
+    "text": "Sudah Pak, tapi cuma janji-janji aja. Bilangnya nanti kami dikasih prioritas kerja, tapi kenyataannya nggak pernah terjadi begitu. Malah yang kerja nanti pasti dari luar kampung lagi.",
+    "next": 5
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Berapa banyak warga yang terdampak di sini, Pak?",
+    "next": 6
+  },
+  {
+    "type": "text",
+    "speaker": "Pak Kholil",
+    "text": "Sekitar 500 kepala keluarga, Pak. Semuanya hidup dari sawah ini. Kalau sawah diambil, entah bagaimana lagi nasib kami ke depan.",
+    "next": 7
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Kalau begitu, sekarang harapan Bapak apa yang bisa saya bantu?",
+    "next": 8
+  },
+  {
+    "type": "text",
+    "speaker": "Pak Kholil",
+    "text": "Ya, kami berharap sawah ini tetap bisa kami garap. Ini sumber hidup kami, Pak.",
+    "next": 9
+  },
+  {
+    "type": "choice",
+    "speaker": "Player",
+    "text": "Kalau saya dipercaya, apa harapan terbesar Bapak untuk ke depan?",
+    "choices": [
+      { "label": "Perjuangkan hak petani", "next": 10, "style":"populis" },
+      { "label": "Dukung investasi PT", "next": 15 , "style":"elitis"},
+      { "label": "Bantu uang tunai sekarang", "next": 22, "style":"politik uang" }
+    ]
+  },
+
+ 
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Pak Kholil, kalau nanti saya dipercaya jadi pemimpin, saya janji akan perjuangkan hak petani atas sawah ini. Kalau memang izin PT belum jelas, petani harus tetap bisa menggarap sawahnya seperti biasa. Saya akan pastikan negara berpihak pada petani kecil.",
+    "next": 11
+  },
+  {
+    "type": "text",
+    "speaker": "Pak Kholil",
+    "text": "Alhamdulillah, Pak… ini yang kami tunggu-tunggu. Kami siap mendukung penuh kalau Bapak mau janji seperti itu. Soalnya cuma Bapak yang selama ini berani bilang begini.",
+    "next": 12
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Terima kasih, Pak Kholil. Yang penting Bapak dan warga sini tetap kompak, nanti kalau saya dipercaya, saya pastikan petani akan dilindungi.",
+    "next": 13
+  },
+  {
+    "type": "text",
+    "speaker": "Pak Kholil",
+    "text": "Siap, Pak! Kami pasti dukung Bapak!",
+    "next": 14
+  },
+  {
+    "type": "end"
+  },
+
+
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Pak Kholil, saya mengerti keluhan Bapak. Tapi, saya pikir proyek PT ini juga penting untuk masa depan desa kita. Nanti desa bisa maju dengan adanya investasi ini, ekonomi tumbuh, tenaga kerja terserap. Kalau saya jadi pemimpin nanti, saya akan pastikan warga desa ini dapat manfaat nyata dari investasi tersebut.",
+    "next": 16
+  },
+  {
+    "type": "text",
+    "speaker": "Pak Kholil",
+    "text": "Jadi, maksud Bapak kami harus rela kehilangan sawah?",
+    "next": 17
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Memang sulit, Pak. Tapi kadang kita harus berkorban sedikit demi manfaat jangka panjang yang lebih besar. Saya janji akan mendorong pelatihan kerja agar warga sini juga bisa bekerja di PT nantinya.",
+    "next": 18
+  },
+  {
+    "type": "text",
+    "speaker": "Pak Kholil",
+    "text": "Ya, kami mengerti, Pak. Tapi tolong dipikirkan juga yang benar-benar bergantung hanya dari sawah ini. Jangan sampai kami terlantar.",
+    "next": 19
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Saya janji, Pak, nggak akan tinggal diam. Saya akan bantu carikan solusi terbaik buat warga nantinya.",
+    "next": 20
+  },
+  {
+    "type": "text",
+    "speaker": "Pak Kholil",
+    "text": "Baiklah, Pak. Kami percaya saja, semoga nanti benar-benar ada manfaatnya.",
+    "next": 21
+  },
+  {
+    "type": "end"
+  },
+
+
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Begini, Pak Kholil. Untuk sementara ini, karena situasi memang sedang sulit, saya pribadi ingin bantu dulu keluarga Bapak dan warga sekitar sini dengan sedikit bantuan uang tunai. Ini biar Bapak dan keluarga nggak terlalu berat mikirin masalah ini.",
+    "next": 23
+  },
+  {
+    "type": "text",
+    "speaker": "Pak Kholil",
+    "text": "Wah, beneran ini, Pak? Alhamdulillah, ini sangat membantu kami. Kebetulan sekarang memang lagi susah banget, Pak.",
+    "next": 24
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Iya Pak, silakan dipakai buat keperluan keluarga dulu. Nanti kalau saya dipercaya memimpin, kita pikirkan solusi yang lebih baik lagi.",
+    "next": 25
+  },
+  {
+    "type": "text",
+    "speaker": "Pak Kholil",
+    "text": "Aduh, terima kasih banyak Pak. Kami pasti dukung Bapak. Tetangga-tetangga juga akan saya kasih tahu supaya pada tahu perhatian Bapak sama kami.",
+    "next": 26
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Terima kasih kembali, Pak Kholil. Semoga bisa meringankan sementara ya.",
+    "next": 27
+  },
+  {
+    "type": "text",
+    "speaker": "Pak Kholil",
+    "text": "Iya, Pak. Pokoknya Bapak sudah bantu kami, insyaallah kami nggak lupa.",
+    "next": 28
+  },
+  {
+    "type": "end"
+  }
+]

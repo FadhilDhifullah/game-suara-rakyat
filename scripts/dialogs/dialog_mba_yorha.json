@@ -1,0 +1,141 @@
+[
+  {
+    "type": "text",
+    "speaker": "Mba Yorha",
+    "text": "Pak, sebelum saya percaya pada visi siapa pun, saya ingin tahu—bagi Bapak, kemajuan daerah itu apa? Karena bagi saya, kemajuan bukan sekadar jalan mulus dan gedung tinggi.",
+    "next": 1
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Menurut saya, kemajuan itu ketika warga bisa hidup tenang, ekonomi bergerak, dan hak-hak dasar semua orang terjamin.",
+    "next": 2
+  },
+  {
+    "type": "text",
+    "speaker": "Mba Yorha",
+    "text": "Kalimat yang indah, Pak. Tapi saya ingin dengar, jika dihadapkan pada keputusan sulit: mendahulukan kebutuhan massa atau segelintir orang kuat, Bapak berpihak ke mana?",
+    "next": 3
+  },
+  {
+    "type": "choice",
+    "speaker": "Player",
+    "text": "Jika harus memilih, Bapak akan berpihak ke mana?",
+    "choices": [
+      { "label": "Dukung suara rakyat", "next": 4, "style":"populis" },
+      { "label": "Utamakan SDM unggul & investasi", "next": 10, "style":"elitis" },
+      { "label": "Tawarkan imbalan politik uang", "next": 16, "style":"politik uang" }
+    ]
+  },
+
+ 
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Saya akan selalu berpihak pada masyarakat banyak, Mba. Suara rakyat yang jadi dasar keputusan saya. Kalau ada tekanan dari elite, saya akan berdiri di depan, bukan bersembunyi di belakang meja.",
+    "next": 5
+  },
+  {
+    "type": "text",
+    "speaker": "Mba Yorha",
+    "text": "Saya suka jawaban berani, Pak. Tapi, suara rakyat kadang mudah diadu domba—apalagi oleh mereka yang punya uang dan media. Kalau nanti suara massa mulai memudar, apakah Bapak tetap bersama mereka, atau akhirnya ikut arus yang lebih kuat?",
+    "next": 6
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Saya percaya, kekuatan perubahan ada pada konsistensi. Jika mulai goyah, tugas saya justru makin kuat mengajak warga untuk bersama. Kalau sendirian pun, saya tetap akan bersuara.",
+    "next": 7
+  },
+  {
+    "type": "text",
+    "speaker": "Mba Yorha",
+    "text": "Kalau begitu, jangan hanya janji, Pak. Saya akan jadi yang pertama mengingatkan Bapak kalau mulai kehilangan arah.",
+    "next": 8
+  },
+  {
+    "type": "end"
+  },
+
+  
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Mba, saya yakin kemajuan daerah harus didorong oleh yang terbaik—SDM unggul, investasi, inovasi. Kalau kita terus-menerus menunggu semua setuju, kita tak pernah bergerak maju.",
+    "next": 11
+  },
+  {
+    "type": "text",
+    "speaker": "Mba Yorha",
+    "text": "(Sedikit mengangguk, menantang) Akhirnya ada juga yang bicara seperti itu. Tapi perubahan cepat seringkali meninggalkan luka. Siapa yang bertanggung jawab kalau sebagian warga merasa ditinggalkan atau bahkan dikorbankan demi 'kemajuan' versi elite?",
+    "next": 12
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Modernisasi tidak boleh meninggalkan siapa pun, meski memang tidak mudah. Saya pastikan ada jaring pengaman—pelatihan, pendampingan, bahkan kebijakan afirmatif untuk kelompok yang terdampak.",
+    "next": 13
+  },
+  {
+    "type": "text",
+    "speaker": "Mba Yorha",
+    "text": "Baiklah. Tapi ingat, tidak semua orang siap dengan perubahan. Jangan lupa: kadang yang tercepat bukan yang terbaik, tapi yang paling peduli.",
+    "next": 14
+  },
+  {
+    "type": "end"
+  },
+
+
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Mba, saya tahu Anda berpengaruh di lingkungan sini. Kalau Mba mau, saya bisa kasih “tanda terima kasih” khusus—anggap saja bentuk perhatian saya. Asal Mba dan orang-orang di sekitar ikut mendukung saya, semua jadi lebih mudah.",
+    "next": 17
+  },
+  {
+    "type": "text",
+    "speaker": "Mba Yorha",
+    "text": "Jadi… begitu caranya? Anda pikir semua orang bisa dibeli dengan amplop?",
+    "next": 18
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Bukan begitu, Mba, maksud saya hanya ingin memudahkan—",
+    "next": 19
+  },
+  {
+    "type": "text",
+    "speaker": "Mba Yorha",
+    "text": "Tidak, Pak. Anda salah besar kalau mengira harga diri dan suara saya bisa Anda tawar seperti dagangan di pasar.",
+    "next": 20
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Saya hanya—",
+    "next": 21
+  },
+  {
+    "type": "text",
+    "speaker": "Mba Yorha",
+    "text": "(Cutting off, menatap tajam) Cukup, Pak. Silakan cari orang lain yang mau harga dirinya dijual murah. Saya lebih baik lapar daripada harus menggadaikan integritas demi uang Anda.",
+    "next": 22
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "(Menunduk, gagal total)",
+    "next": 23
+  },
+  {
+    "type": "text",
+    "speaker": "Mba Yorha",
+    "text": " Saya pikir Anda berbeda dari politisi lain. Ternyata sama saja.",
+    "next": 24
+  },
+  {
+    "type": "end"
+  }
+]

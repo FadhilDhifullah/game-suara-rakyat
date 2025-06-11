@@ -1,0 +1,115 @@
+[
+  {
+    "type": "text",
+    "speaker": "Mba Fayra",
+    "text": "Pak, membangun startup di sini itu penuh tantangan. Urus izin usaha butuh waktu lama, kadang harus ketemu orang yang nggak jelas, dan sering ada pungutan liar. Pernah juga, tiba-tiba ada ormas datang ke kantor, minta “biaya keamanan”. Padahal, kami cuma ingin fokus mengembangkan produk dan menciptakan lapangan kerja.",
+    "next": 1
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Saya sering dengar cerita seperti itu, Mba Fayra. Apa yang menurutmu paling menghambat pertumbuhan startup di sini?",
+    "next": 2
+  },
+  {
+    "type": "text",
+    "speaker": "Mba Fayra",
+    "text": "Yang bikin capek itu proses birokrasi yang tidak efisien, Pak. Perizinan harus bolak-balik kantor, belum lagi kalau dimintai uang tambahan. Rasanya, jadi pengusaha muda justru lebih sering menghadapi masalah administratif ketimbang tantangan inovasi.",
+    "next": 3
+  },
+  {
+    "type": "choice",
+    "speaker": "Player",
+    "text": "Langkah apa yang paling Mba butuhkan agar startup bisa berkembang?",
+    "choices": [
+      { "label": "Subsidi & hotline anti pungli", "next": 4, "style":"populis" },
+      { "label": "Birokrasi digital, izin online", "next": 9,"style":"elitis" },
+      { "label": "Jalur khusus dan kemudahan izin", "next": 14, "style":"politik uang" }
+    ]
+  },
+
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Kami akan memperkuat pendampingan untuk pelaku startup, memperbanyak subsidi, dan menyediakan hotline aduan jika ada pungli atau ormas yang mengganggu. Startup seperti yang Mba jalankan akan jadi prioritas program pemerintah.",
+    "next": 5
+  },
+  {
+    "type": "text",
+    "speaker": "Mba Fayra",
+    "text": "Saya menghargai perhatian pemerintah, Pak. Yang paling penting buat kami sebenarnya kepastian dan keadilan, supaya kami bisa berkompetisi secara sehat.",
+    "next": 6
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Kami ingin semua pengusaha muda berkembang tanpa takut pada birokrasi atau pungutan tidak resmi.",
+    "next": 7
+  },
+  {
+    "type": "text",
+    "speaker": "Mba Fayra",
+    "text": "Saya berharap program seperti ini betul-betul membantu kami fokus berkarya.",
+    "next": 8
+  },
+  {
+    "type": "end"
+  },
+
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Mba Fayra, saya berkomitmen memangkas birokrasi dan menghapus pungli lewat sistem digital penuh. Semua izin usaha bisa diurus online, transparan, tanpa perantara. Tidak ada ruang untuk pungli ataupun ormas yang mengganggu pelaku usaha.",
+    "next": 10
+  },
+  {
+    "type": "text",
+    "speaker": "Mba Fayra",
+    "text": "Itu solusi yang sangat kami butuhkan, Pak. Saya yakin, kalau semua proses bisa transparan dan digital, semakin banyak anak muda yang mau membangun usaha di sini.",
+    "next": 11
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Pemerintah akan membentuk tim khusus untuk menangani laporan pelaku usaha secara langsung.",
+    "next": 12
+  },
+  {
+    "type": "text",
+    "speaker": "Mba Fayra",
+    "text": "Saya siap berkontribusi lebih banyak kalau sistem seperti ini diterapkan.",
+    "next": 13
+  },
+  {
+    "type": "end"
+  },
+
+  
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Mba Fayra, kalau Mba dan komunitas startup bersedia mendukung program saya, saya bisa mempermudah semua urusan perizinan dan keamanan. Semua jadi lebih mudah dan cepat.",
+    "next": 15
+  },
+  {
+    "type": "text",
+    "speaker": "Mba Fayra",
+    "text": "Terima kasih, Pak. Saya percaya setiap kemudahan seharusnya didapatkan lewat prosedur yang benar, bukan lewat jalur khusus. Kami ingin tetap tumbuh secara profesional dan mandiri.",
+    "next": 16
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Saya mengerti, Mba Fayra. Saya doakan startup Mba semakin sukses.",
+    "next": 17
+  },
+  {
+    "type": "text",
+    "speaker": "Mba Fayra",
+    "text": "Amin, Pak. Kalau sistem makin bersih, makin banyak inovasi anak muda yang bisa muncul.",
+    "next": 18
+  },
+  {
+    "type": "end"
+  }
+]

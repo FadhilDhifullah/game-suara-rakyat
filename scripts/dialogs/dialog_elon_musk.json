@@ -1,0 +1,115 @@
+[
+  {
+    "type": "text",
+    "speaker": "Elon Musks",
+    "text": "So, Pak, saya sudah investasi miliaran dolar di daerah ini. Pabrik sudah berdiri, lapangan kerja tercipta. Tapi saya ingin kepastian—proyek sebesar ini butuh jaminan dan insentif yang sepadan. Jangan sampai regulasi diubah-ubah. Kalau negara ingin maju, harus berani kasih karpet merah untuk investor kelas dunia seperti saya.",
+    "next": 1
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Terima kasih atas investasinya, Pak Elon. Apa saja syarat utama agar pabrik Bapak bisa beroperasi optimal di sini?",
+    "next": 2
+  },
+  {
+    "type": "text",
+    "speaker": "Elon Musks",
+    "text": "Pertama, saya ingin minimal 30 tahun tax holiday. Syukur-syukur bisa 50 tahun. Kedua, kepastian hukum—tidak ada perubahan aturan tenaga kerja atau pajak di tengah jalan. Ketiga, kemudahan ekspor-impor, tanpa birokrasi ribet. Kalau pemerintah bisa pastikan tiga hal ini, saya bisa ekspansi dan tambah ribuan pekerjaan lagi.",
+    "next": 3
+  },
+  {
+    "type": "choice",
+    "speaker": "Player",
+    "text": "Apa yang Bapak harapkan dari pemerintah selain itu?",
+    "choices": [
+      { "label": "Prioritaskan dampak sosial & tenaga lokal", "next": 4, "style":"populis" },
+      { "label": "Jaminan tax holiday & kemudahan investasi", "next": 9, "style":"elitis" },
+      { "label": "Tawarkan hak kelola strategis", "next": 15, "style":"politik uang" }
+    ]
+  },
+
+
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Saya ingin investasi Bapak memberi dampak maksimal untuk masyarakat lokal: prioritas tenaga kerja dari warga sekitar, program CSR, dan kontribusi nyata ke pembangunan sosial.",
+    "next": 5
+  },
+  {
+    "type": "text",
+    "speaker": "Elon Musks",
+    "text": "Maaf Pak, saya di sini bukan badan amal. Saya sudah investasi besar, risiko besar. Kalau pemerintah menambah beban lewat syarat sosial dan kuota lokal yang tidak kompetitif, lebih baik saya pindahkan pabrik ke negara lain yang lebih ramah investor. Saya ingin bisnis, bukan urusan politik pencitraan.",
+    "next": 6
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Tapi masyarakat di sini berharap—",
+    "next": 7
+  },
+  {
+    "type": "text",
+    "speaker": "Elon Musks",
+    "text": "Bisnis harus rasional. Kalau terlalu banyak syarat 'kerakyatan', tidak ada alasan saya bertahan lama di sini.",
+    "next": 8
+  },
+  {
+    "type": "end"
+  },
+
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Saya memahami logika investasi, Pak Elon. Pemerintah akan berikan tax holiday panjang, jaminan regulasi, dan akses infrastruktur terbaik. Selama target pertumbuhan ekonomi tercapai, negara tidak akan mengganggu.",
+    "next": 10
+  },
+  {
+    "type": "text",
+    "speaker": "Elon Musks",
+    "text": "That’s what I want to hear! Kalau pemerintah bisa kasih jaminan hukum dan fasilitas, saya siap jadikan daerah ini pusat industri global. Saya juga mau seluruh proses digital—izin, ekspor, impor—cukup satu pintu dan tanpa pungli.",
+    "next": 11
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Kami akan bentuk satuan tugas khusus untuk investasi strategis. Semua masalah bisa Bapak sampaikan langsung, tanpa birokrasi panjang.",
+    "next": 12
+  },
+  {
+    "type": "text",
+    "speaker": "Elon Musks",
+    "text": "Good. Dengan pendekatan seperti ini, saya bisa tambah investasi, bahkan bawa mitra global masuk ke sini.",
+    "next": 13
+  },
+  {
+    "type": "end"
+  },
+
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Pak Elon, saya paham investasi global butuh lebih dari sekadar tax holiday. Kalau Bapak mau komit dukungan penuh—bukan cuma modal, tapi juga jaringan dan pengaruh global—saya bisa tawarkan hak kelola khusus, misal pengelolaan lahan pertambangan strategis, atau saham mayoritas di perusahaan daerah. Sebagai gantinya, saya harap Bapak bisa ikut mendukung saya secara terbuka, menggunakan pengaruh Bapak di dunia bisnis dan media.",
+    "next": 16
+  },
+  {
+    "type": "text",
+    "speaker": "Elon Musks",
+    "text": "Now you’re talking, Pak. Dengan akses seperti itu, saya bisa bawa teknologi terbaru, modal jumbo, dan mitra internasional ke sini. Setelah deal resmi, saya bisa bicara di forum internasional, mempromosikan pemerintahan Bapak.",
+    "next": 17
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Saya akan pastikan semua proses berjalan sesuai kebutuhan kita bersama.",
+    "next": 18
+  },
+  {
+    "type": "text",
+    "speaker": "Elon Musks",
+    "text": "Kesepakatan seperti ini hanya untuk pemimpin yang siap melangkah jauh. Let’s make history, Pak.",
+    "next": 19
+  },
+  {
+    "type": "end"
+  }
+]

@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-var speed := 100
+var speed := 250
 @onready var anim_sprite: AnimatedSprite2D = $AnimatedSprite2D
 
 func _physics_process(delta):
@@ -36,3 +36,7 @@ func play_animation(velocity: Vector2):
 			anim_sprite.play("walk_front")
 		else:
 			anim_sprite.play("walk_back")
+
+
+func _on_button_pressed() -> void:
+	pass # Replace with function body.

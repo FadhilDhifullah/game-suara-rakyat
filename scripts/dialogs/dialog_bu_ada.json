@@ -46,9 +46,9 @@
 	"speaker": "Player",
 	"text": "Apa yang akan Anda lakukan sebagai calon pemimpin?",
 	"choices": [
-	  { "label": "Janji perlindungan pekerja", "next": 8 },
-	  { "label": "Solusi bertahap untuk semua", "next": 13 },
-	  { "label": "Bantuan pribadi sekarang", "next": 18 }
+	  { "label": "Janji perlindungan pekerja", "next": 8, "style":"populis" },
+	  { "label": "Solusi bertahap untuk semua", "next": 13, "style":"elitis" },
+	  { "label": "Bantuan pribadi sekarang", "next": 18, "style":"politik uang" }
 	]
   },
 

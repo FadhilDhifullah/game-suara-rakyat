@@ -3,7 +3,6 @@ extends CharacterBody2D
 @export var npc_texture: Texture
 @export var dialog_data: Array = []
 
-
 var is_player_near: bool = false
 var player_node: Node2D = null
 
@@ -32,20 +31,48 @@ func _ready() -> void:
 	print("[npc_story] player_node = ", player_node)
 
 func _on_body_entered(body: Node) -> void:
-	print("[npc_story] Player masuk:", body)
 	if body == player_node:
 		is_player_near = true
 
 func _on_body_exited(body: Node) -> void:
-	print("[npc_story] Player keluar:", body)
 	if body == player_node:
 		is_player_near = false
 
 func _input(event: InputEvent) -> void:
 	if is_player_near and event.is_action_pressed("ui_select"):
-		print("[npc_story] ui_select ditekan.")
 		var dm = get_tree().get_current_scene().get_node("DialogueManager")
-		print("[npc_story] Hasil get_node DialogueManager: ", dm)
+		var npc_key = GameState.normalize_name(name)
+		print("[npc_story] Interact attempt:", name, "as", npc_key)
+
+		# --- CEK SUDAH INTERAKSI BELUM? ---
+		if GameState.taken_by_player.has(npc_key):
+			if dm and dm.has_method("show_rejection"):
+				dm.show_rejection("%s: Kamu sudah pernah berinteraksi." % name, self)
+			else:
+				print("%s: Kamu sudah pernah berinteraksi." % name)
+			return
+		# --- END SUDAH INTERAKSI ---
+
+		# --- CEK BIAS DI SINI ---
+		var meta = GameState.NPC_META.get(npc_key, null)
+		if meta != null:
+			var total_suara = GameState.player_pop + GameState.player_elit
+			# Jangan cek bias jika baru 1 interaksi (total < 20)
+			if total_suara >= 20:
+				var cur_bias = GameState.bias(GameState.player_pop, GameState.player_elit)
+				if meta.pref == "elitis" and cur_bias >= meta.bias_limit:
+					if dm and dm.has_method("show_rejection"):
+						dm.show_rejection("%s menolak bicara: kamu terlalu Populis!" % name, self)
+					else:
+						print("%s menolak bicara, kamu terlalu Populis!" % name)
+					return
+				if meta.pref == "populis" and cur_bias <= -meta.bias_limit:
+					if dm and dm.has_method("show_rejection"):
+						dm.show_rejection("%s menolak bicara: kamu terlalu Elitis!" % name, self)
+					else:
+						print("%s menolak bicara, kamu terlalu Elitis!" % name)
+					return
+
 		if dm:
 			dm.start_dialogue(self)
 		else:

@@ -1,0 +1,152 @@
+[
+  {
+    "type": "text",
+    "speaker": "Pak Kemong",
+    "text": "Aduh, Pak… pemerintah katanya mau bangun pulau baru, proyek reklamasi itu. Sekarang saya sama teman-teman nelayan sudah nggak bisa lagi mancing deket-deket situ. Ikan kayaknya juga kena gusur, pindah alamat semua, saya aja belum pernah ganti KTP, ikannya udah duluan pindah.",
+    "next": 1
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Kok bisa gitu, Pak? Dampaknya apa buat Bapak dan nelayan lain?",
+    "next": 2
+  },
+  {
+    "type": "text",
+    "speaker": "Pak Kemong",
+    "text": "Ya gimana, Pak… Dulu mancing deket rumah, sekarang mesti melaut jauh, muter kayak mau nyusul kapal Titanic. Belum juga dapet ikan, bensin udah habis, kadang pulang cuma dapet cerita doang, bukan ikan.",
+    "next": 3
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Jadi biaya operasional makin tinggi ya, Pak?",
+    "next": 4
+  },
+  {
+    "type": "text",
+    "speaker": "Pak Kemong",
+    "text": "Bukan cuma tinggi, Pak. Naiknya udah kayak harga daging pas lebaran, nggak masuk akal. Kalau terus begini, anak-bini saya makan angin, lauknya harapan doang.",
+    "next": 5
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Tapi katanya reklamasi ini buat kemajuan daerah juga, pariwisata dan ekonomi. Bapak pernah ikut sosialisasi pemerintah?",
+    "next": 6
+  },
+  {
+    "type": "text",
+    "speaker": "Pak Kemong",
+    "text": "Pernah, Pak. Tapi ya cuma denger janji-janji. Katanya nanti warga lokal bakal dapet kerjaan. Lah saya ini nelayan, Pak, bukan tukang parkir kapal. Suruh kerja di pulau reklamasi juga bingung, nggak ada ikannya ya sama aja bohong.",
+    "next": 7
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Kalau menurut Bapak, solusinya bagaimana?",
+    "next": 8
+  },
+  {
+    "type": "text",
+    "speaker": "Pak Kemong",
+    "text": "Ya kalau bisa jangan sembarangan gusur laut, Pak. Kalau ikannya kabur, kita makan apa? Jangan sampe nelayan cuma jadi penonton pembangunan, nggak ikut dapet rejekinya.",
+    "next": 9
+  },
+  {
+    "type": "choice",
+    "speaker": "Player",
+    "text": "Apa yang sebaiknya saya lakukan menurut Bapak?",
+    "choices": [
+      { "label": "Perjuangkan nelayan", "next": 10,  "style":"populis" },
+      { "label": "Dukung reklamasi, janji pelatihan", "next": 15,  "style":"elitis" },
+      { "label": "Bantu uang tunai sekarang", "next": 20, "style":"politik uang" }
+    ]
+  },
+
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Pak Kemong, saya setuju, nelayan harus didengar. Kalau saya terpilih nanti, saya bakal perjuangkan supaya proyek reklamasi ini ditinjau ulang, paling tidak lokasinya jangan sampai ganggu rute nelayan. Lingkungan harus dijaga, nelayan jangan jadi korban.",
+    "next": 11
+  },
+  {
+    "type": "text",
+    "speaker": "Pak Kemong",
+    "text": "Wah, akhirnya ada juga yang mau dengerin keluhan nelayan. Saya siap dukung, Pak. Jangan sampe cuma daratan aja yang diurus, laut dilupain. Kalau perlu, saya siap bantu bikin demo pakai ikan beneran, biar pemerintah lihat langsung.",
+    "next": 12
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Nanti kita libatkan juga ahli lingkungan untuk diskusi, biar semua pihak paham risikonya. Saya nggak akan tinggal diam kalau nelayan dirugikan.",
+    "next": 13
+  },
+  {
+    "type": "text",
+    "speaker": "Pak Kemong",
+    "text": "Mantap, Pak! Kapan-kapan mampir rumah, saya bakarin ikan buat Bapak. Asal jangan minta hiu ya, takut saya!",
+    "next": 14
+  },
+  {
+    "type": "end"
+  },
+
+
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Saya mengerti kondisi nelayan memang jadi berat, Pak. Tapi di sisi lain, reklamasi ini juga penting buat masa depan daerah. Kalau proyek ini jalan, investor bakal masuk, lapangan kerja bertambah, ekonomi daerah maju. Nanti saya pastikan juga ada pelatihan buat nelayan agar bisa ikut terlibat.",
+    "next": 16
+  },
+  {
+    "type": "text",
+    "speaker": "Pak Kemong",
+    "text": "Waduh, Pak… saya nelayan disuruh pelatihan, nanti lulus-lulus jadi tukang jualan kaos pantai? Atau jualan ikan goreng di pinggir reklamasi? Kalau ikannya aja kabur, pelatihan juga percuma, Pak.",
+    "next": 17
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Saya janji, kalau terpilih nanti, pemerintah akan bantu transisi profesi. Nelayan tetap dapat perhatian, jangan sampai ada yang kehilangan mata pencaharian.",
+    "next": 18
+  },
+  {
+    "type": "text",
+    "speaker": "Pak Kemong",
+    "text": "Ya sudah deh, Pak. Orang kecil kayak saya cuma bisa ikut aja. Mudah-mudahan nasib nelayan nggak makin parah.",
+    "next": 19
+  },
+  {
+    "type": "end"
+  },
+
+
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Begini, Pak Kemong. Saya tahu masa-masa kayak gini berat buat nelayan. Sambil menunggu kepastian, saya bantu sedikit dulu untuk Bapak dan keluarga. Yang penting Bapak tenang, nggak usah ribut-ribut dulu soal proyek ini.",
+    "next": 21
+  },
+  {
+    "type": "text",
+    "speaker": "Pak Kemong",
+    "text": "Wah, Pak, beneran? Kalau begini mah, tiap minggu ada reklamasi juga nggak apa-apa. Tapi bener ya Pak, ini bukan uang mainan?",
+    "next": 22
+  },
+  {
+    "type": "text",
+    "speaker": "Player",
+    "text": "Tentu Pak, ini buat kebutuhan keluarga dulu. Kalau terpilih, saya pastikan akan ada solusi lebih baik buat nelayan.",
+    "next": 23
+  },
+  {
+    "type": "text",
+    "speaker": "Pak Kemong",
+    "text": "Terima kasih banget, Pak. Saya doain Bapak lancar kampanyenya. Kalau Bapak butuh dukungan, tinggal bilang. Nelayan siap bantu, asal jangan suruh mancing hiu bareng, ngeri juga, hehehe.",
+    "next": 24
+  },
+  {
+    "type": "end"
+  }
+]

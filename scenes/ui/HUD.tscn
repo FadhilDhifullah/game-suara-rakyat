@@ -1,0 +1,94 @@
+[gd_scene load_steps=2 format=3 uid="uid://cduhgv58fa5cn"]
+
+[ext_resource type="Script" uid="uid://dyryrmkj48b6m" path="res://scripts/ui/HUD.gd" id="1_kw0id"]
+
+[node name="Hud" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 108.0
+offset_top = 73.0
+offset_right = 108.0
+offset_bottom = 73.0
+script = ExtResource("1_kw0id")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+offset_left = -87.5
+offset_top = -73.0
+offset_right = 2.5
+offset_bottom = -50.0
+text = "Citra Politik"
+
+[node name="BarCitra" type="TextureProgressBar" parent="."]
+layout_mode = 2
+offset_left = -87.5
+offset_top = -46.0
+offset_right = 2.5
+offset_bottom = -45.0
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 2
+offset_left = 17.0
+offset_top = -73.0
+offset_right = 62.0
+offset_bottom = -50.0
+text = "Suara"
+
+[node name="LblSuara" type="Label" parent="."]
+layout_mode = 2
+offset_left = 18.0
+offset_top = -46.0
+offset_right = 63.0
+offset_bottom = -23.0
+
+[node name="Label3" type="Label" parent="."]
+layout_mode = 2
+offset_left = -76.5
+offset_top = -30.0
+offset_right = -43.5
+offset_bottom = 19.0
+text = "NPC
+"
+
+[node name="LblNPCcount" type="Label" parent="."]
+layout_mode = 2
+offset_left = -34.0
+offset_top = -23.0
+offset_right = -33.0
+
+[node name="BtnFinish" type="Button" parent="."]
+layout_mode = 2
+offset_left = -76.5
+offset_top = 6.5
+offset_right = 71.5
+offset_bottom = 37.5
+text = "Selesai Kampanye"
+
+[node name="LblLastAction" type="Label" parent="."]
+layout_mode = 2
+offset_left = 75.5
+offset_top = 10.5
+offset_right = 76.5
+offset_bottom = 33.5
+
+[node name="HSeparator" type="HSeparator" parent="."]
+layout_mode = 2
+offset_left = -17.0
+offset_top = -11.0
+offset_right = 15.0
+offset_bottom = 12.0
+
+[node name="Label4" type="Label" parent="."]
+layout_mode = 2
+offset_left = 94.0
+offset_top = -71.0
+offset_right = 126.0
+offset_bottom = -48.0
+text = "Risk"
+
+[node name="BarRisk" type="TextureProgressBar" parent="."]
+layout_mode = 2
+offset_left = 103.0
+offset_top = -44.0
+offset_right = 111.0
+offset_bottom = -36.0
