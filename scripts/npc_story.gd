@@ -57,21 +57,27 @@ func _input(event: InputEvent) -> void:
 		var meta = GameState.NPC_META.get(npc_key, null)
 		if meta != null:
 			var total_suara = GameState.player_pop + GameState.player_elit
-			# Jangan cek bias jika baru 1 interaksi (total < 20)
 			if total_suara >= 20:
 				var cur_bias = GameState.bias(GameState.player_pop, GameState.player_elit)
 				if meta.pref == "elitis" and cur_bias >= meta.bias_limit:
+					# Tambahkan NPC ke taken_by_player dengan "ilfeel"
+					GameState.taken_by_player[npc_key] = "ilfeel"
+					# Emit sinyal agar HUD ke-update
+					GameState.emit_signal("npc_interacted")
 					if dm and dm.has_method("show_rejection"):
 						dm.show_rejection("%s menolak bicara: kamu terlalu Populis!" % name, self)
 					else:
 						print("%s menolak bicara, kamu terlalu Populis!" % name)
 					return
 				if meta.pref == "populis" and cur_bias <= -meta.bias_limit:
+					GameState.taken_by_player[npc_key] = "ilfeel"
+					GameState.emit_signal("npc_interacted")
 					if dm and dm.has_method("show_rejection"):
 						dm.show_rejection("%s menolak bicara: kamu terlalu Elitis!" % name, self)
 					else:
 						print("%s menolak bicara, kamu terlalu Elitis!" % name)
 					return
+		# --- END CEK BIAS ---
 
 		if dm:
 			dm.start_dialogue(self)

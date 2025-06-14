@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cduhgv58fa5cn"]
+[gd_scene load_steps=3 format=3 uid="uid://cduhgv58fa5cn"]
 
 [ext_resource type="Script" uid="uid://dyryrmkj48b6m" path="res://scripts/ui/HUD.gd" id="1_kw0id"]
+[ext_resource type="Script" uid="uid://bhvmsl5s1v1yr" path="res://scripts/ui/ending_panel.gd" id="2_atyv1"]
 
 [node name="Hud" type="Control"]
 layout_mode = 3
@@ -92,3 +93,39 @@ offset_left = 103.0
 offset_top = -44.0
 offset_right = 111.0
 offset_bottom = -36.0
+
+[node name="EndingPanel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 117.0
+offset_top = 66.0
+offset_right = 892.0
+offset_bottom = 384.0
+script = ExtResource("2_atyv1")
+
+[node name="LblTitle" type="Label" parent="EndingPanel"]
+offset_left = 72.0
+offset_top = 48.0
+offset_right = 704.0
+offset_bottom = 71.0
+text = "test"
+
+[node name="TxtBody" type="RichTextLabel" parent="EndingPanel"]
+offset_left = 70.0
+offset_top = 98.0
+offset_right = 720.0
+offset_bottom = 240.0
+text = "test"
+
+[node name="BtnRetry" type="Button" parent="EndingPanel"]
+offset_left = 638.0
+offset_top = 273.0
+offset_right = 684.0
+offset_bottom = 304.0
+text = "retry"
+
+[node name="BtnQuit" type="Button" parent="EndingPanel"]
+offset_left = 91.0
+offset_top = 269.0
+offset_right = 133.0
+offset_bottom = 300.0
+text = "Quit"

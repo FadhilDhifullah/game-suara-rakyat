@@ -22,9 +22,9 @@
     "speaker": "Player",
     "text": "Langkah apa yang paling Bu harapkan dari pemerintah?",
     "choices": [
-      { "label": "Permudah akses modal & subsidi bunga (Populis)", "next": 4, "style":"populis" },
-      { "label": "Dorong UMKM naik kelas, insentif pajak (Elitis)", "next": 10,"style":"elitis" },
-      { "label": "Bantu dana/insentif langsung (Politik Uang)", "next": 16, "style":"politik uang" }
+      { "label": "Permudah akses modal", "next": 4, "style":"populis" },
+      { "label": "Dorong UMKM naik kelas", "next": 10,"style":"elitis" },
+      { "label": "Bantu dana/insentif langsung", "next": 16, "style":"politik uang" }
     ]
   },
 

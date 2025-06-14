@@ -1,9 +1,9 @@
 extends Control
 
-@onready var lbl_title = $MarginContainer/VBoxContainer/LblTitle   as Label
-@onready var txt_body  = $MarginContainer/VBoxContainer/TxtBody    as RichTextLabel
-@onready var btn_retry = $MarginContainer/VBoxContainer/HBoxContainer/BtnRetry  as Button
-@onready var btn_quit  = $MarginContainer/VBoxContainer/HBoxContainer/BtnQuit   as Button
+@onready var lbl_title = $LblTitle   as Label
+@onready var txt_body  = $TxtBody    as RichTextLabel
+@onready var btn_retry = $BtnRetry  as Button
+@onready var btn_quit  = $BtnQuit   as Button
 
 func _ready():
 	_show_ending()
