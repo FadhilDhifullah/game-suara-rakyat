@@ -1621,7 +1621,7 @@ shape = SubResource("RectangleShape2D_psapa")
 [node name="NPC_Wander" type="Node" parent="NPCs"]
 
 [node name="NPC_1" type="CharacterBody2D" parent="NPCs/NPC_Wander"]
-position = Vector2(153, 249)
+position = Vector2(115, 175)
 script = ExtResource("11_5at7p")
 npc_track_layer_path = NodePath("../../../GameTileMap/Tileset/npc_track")
 
@@ -1677,10 +1677,13 @@ position = Vector2(-0.5, 2)
 shape = SubResource("RectangleShape2D_ex086")
 
 [node name="DialogueManager" parent="." instance=ExtResource("22_ffb33")]
+visible = false
 player_texture = ExtResource("28_mfgdr")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = 0
+visible = false
 
 [node name="Hud" parent="CanvasLayer" instance=ExtResource("48_nwrae")]
+visible = false
 metadata/_edit_use_anchors_ = true

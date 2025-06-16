@@ -1,28 +1,34 @@
-# NpcManager.gd
-# -----------------------------
-# Singleton (autoload) untuk mencatat tile mana yang 'dikuasai' tiap NPC.
-# Juga helper: mendapatkan ID NPC yang menempati tile tertentu.
-# -----------------------------
-
 extends Node
 
-# key = instance_id NPC,  value = Vector2i (tile yang sedang ditempati)
-var occupied_tiles := {}
+var occupied_tiles: Dictionary = {}
+var booked_tiles: Dictionary = {}
 
 func occupy_tile(npc_id, tile: Vector2i) -> void:
-	occupied_tiles[npc_id] = tile
+	occupied_tiles[tile] = npc_id
 
 func release_tile(npc_id) -> void:
-	occupied_tiles.erase(npc_id)
+	var keys = []
+	for tile in occupied_tiles:
+		if occupied_tiles[tile] == npc_id:
+			keys.append(tile)
+	for tile in keys:
+		occupied_tiles.erase(tile)
 
-func is_tile_occupied(tile: Vector2i, exclude_npc_id = null) -> bool:
-	for id_key in occupied_tiles.keys():
-		if occupied_tiles[id_key] == tile and id_key != exclude_npc_id:
-			return true
-	return false
+func is_tile_occupied(tile: Vector2i, self_id) -> bool:
+	return occupied_tiles.has(tile) and occupied_tiles[tile] != self_id
 
-func get_npc_id_on_tile(tile: Vector2i, exclude_npc_id = null):
-	for id_key in occupied_tiles.keys():
-		if occupied_tiles[id_key] == tile and id_key != exclude_npc_id:
-			return id_key
+func get_npc_id_on_tile(tile: Vector2i, self_id) -> Variant:
+	if occupied_tiles.has(tile) and occupied_tiles[tile] != self_id:
+		return occupied_tiles[tile]
 	return null
+
+
+func book_tile(npc_id, tile: Vector2i) -> bool:
+	if booked_tiles.has(tile) and booked_tiles[tile] != npc_id:
+		return false
+	booked_tiles[tile] = npc_id
+	return true
+
+func release_tile_booking(npc_id, tile: Vector2i) -> void:
+	if booked_tiles.has(tile) and booked_tiles[tile] == npc_id:
+		booked_tiles.erase(tile)
