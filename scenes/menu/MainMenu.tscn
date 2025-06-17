@@ -1,0 +1,57 @@
+[gd_scene load_steps=8 format=3 uid="uid://ba6c8dxh2hv1j"]
+
+[ext_resource type="Texture2D" uid="uid://bndf7m1sd2m0g" path="res://scenes/menu/assetsmenu/background.png" id="1_2nud1"]
+[ext_resource type="Script" uid="uid://mi3r8n7sksp7" path="res://scenes/menu/main_menu.gd" id="1_y6vun"]
+[ext_resource type="Texture2D" uid="uid://c7av2sb3wbkf0" path="res://scenes/menu/assetsmenu/judul.png" id="2_iv2fv"]
+[ext_resource type="Texture2D" uid="uid://dw7p4wxw6btaa" path="res://scenes/menu/assetsmenu/start.png" id="3_mgsx5"]
+[ext_resource type="Texture2D" uid="uid://ckmqxmy3d77e2" path="res://scenes/menu/assetsmenu/startHover.png" id="4_mgsx5"]
+[ext_resource type="Texture2D" uid="uid://b6geie2ucjh51" path="res://scenes/menu/assetsmenu/quit.png" id="4_y6vun"]
+[ext_resource type="Texture2D" uid="uid://b2d1ti3nhkuhh" path="res://scenes/menu/assetsmenu/quitHover.png" id="5_iv2fv"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_y6vun")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(965, 595)
+scale = Vector2(1.25456, 1.15527)
+texture = ExtResource("1_2nud1")
+
+[node name="Judul" type="Sprite2D" parent="."]
+position = Vector2(1009, 121)
+texture = ExtResource("2_iv2fv")
+
+[node name="TextureButtonStart" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.38776
+anchor_top = 0.580093
+anchor_right = 0.61224
+anchor_bottom = 0.664352
+offset_bottom = -6.10352e-05
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("3_mgsx5")
+texture_hover = ExtResource("4_mgsx5")
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureButtonQuit" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.38776
+anchor_top = 0.747222
+anchor_right = 0.61224
+anchor_bottom = 0.831481
+grow_horizontal = 2
+grow_vertical = 0
+texture_normal = ExtResource("4_y6vun")
+texture_hover = ExtResource("5_iv2fv")
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="TextureButtonStart" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="TextureButtonQuit" to="." method="_on_quit_pressed"]

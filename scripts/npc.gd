@@ -24,6 +24,10 @@ func _ready() -> void:
 	if tilemap_layer == null:
 		push_error("TileMapLayer tidak ditemukan!")
 		return
+	# Pastikan NPC ada di grup 'actors' untuk deteksi diri
+	if not is_in_group("actors"):
+		add_to_group("actors")
+		
 	_refresh_road_tiles()
 	_pick_new_destination()
 	var start_tile: Vector2i = _get_nearest_road_tile()
@@ -39,9 +43,10 @@ func _physics_process(delta: float) -> void:
 		velocity = Vector2.ZERO
 		move_and_slide()
 		if stuck_timer > 1.0:
-			current_path = [prev_tile]
+			# PERBAIKAN: Pilih destinasi baru saat benar-benar macet
 			stuck_timer = 0.0
 			idle_timer = 0.0
+			_pick_new_destination()
 		return
 	else:
 		stuck_timer = 0.0
@@ -72,6 +77,7 @@ func _physics_process(delta: float) -> void:
 
 	var target_tile: Vector2i = current_path[1]
 
+	# Pengecekan ini sekarang jauh lebih kuat
 	if _is_tile_blocked(target_tile) and target_tile != last_goal:
 		path_invalidated = true
 		return
@@ -89,24 +95,32 @@ func _physics_process(delta: float) -> void:
 		recent_tiles.push_back(target_tile)
 		if recent_tiles.size() > 2:
 			recent_tiles.pop_front()
+		# Setelah sampai di tile, pathnya berkurang 1, jadi kita hapus tile yg sudah dicapai
+		current_path.pop_front() 
 		return
 	else:
 		velocity = dir_vec.normalized() * speed
 		move_and_slide()
 		_update_animation(velocity)
 
+# PERBAIKAN: Fungsi ini sekarang memeriksa semua 'actors'
 func _is_tile_blocked(tile: Vector2i) -> bool:
-	for player_node in get_tree().get_nodes_in_group("Player"):
-		var p_pos: Vector2
-		if player_node.has_method("get_global_position"):
-			p_pos = player_node.global_position
-		else:
-			p_pos = player_node.position
-		var p_local: Vector2 = tilemap_layer.to_local(p_pos)
-		var p_tile: Vector2i = tilemap_layer.local_to_map(p_local)
-		if p_tile == tile:
+	for actor in get_tree().get_nodes_in_group("actors"):
+		if actor == self:
+			continue
+			
+		if not is_instance_valid(actor) or not actor is Node2D:
+			continue
+
+		var actor_pos: Vector2 = actor.global_position
+		var actor_local_pos: Vector2 = tilemap_layer.to_local(actor_pos)
+		var actor_tile: Vector2i = tilemap_layer.local_to_map(actor_local_pos)
+		
+		if actor_tile == tile:
 			return true
 	return false
+
+# ... sisa fungsi lainnya (get_nearest_road_tile, bfs_find_path, dll) tetap sama ...
 
 func _get_nearest_road_tile() -> Vector2i:
 	var local_pos: Vector2 = tilemap_layer.to_local(global_position)
@@ -138,7 +152,8 @@ func _bfs_find_path(start: Vector2i, goal: Vector2i) -> Array[Vector2i]:
 		if u == goal:
 			found = true
 			break
-		for nb in adjacency[u]:
+		for nb in adjacency.get(u, []): # Gunakan .get() untuk keamanan
+			# Pengecekan halangan di dalam BFS sangat penting
 			if nb != goal and _is_tile_blocked(nb):
 				continue
 			if not visited.has(nb):
@@ -189,11 +204,10 @@ func _pick_new_destination() -> void:
 		return
 	var goal_tile: Vector2i = possible_targets[randi() % possible_targets.size()]
 	last_goal = goal_tile
-	var path: Array[Vector2i] = _bfs_find_path(start_tile, goal_tile)
-	if path.is_empty():
-		current_path = []
-		return
-	current_path = path.duplicate()
+	# Pathfinding langsung dijalankan di sini agar lebih responsif
+	path_invalidated = true
+	pathfinding_timer = 0.0
+
 
 func _update_animation(vel: Vector2) -> void:
 	if vel.length() < 1.0:
@@ -209,6 +223,3 @@ func _update_animation(vel: Vector2) -> void:
 			anim.play("walk_front")
 		else:
 			anim.play("walk_back")
-
-func _exit_tree():
-	pass

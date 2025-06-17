@@ -5,6 +5,11 @@ class_name Player
 var speed := 250
 @onready var anim_sprite: AnimatedSprite2D = $AnimatedSprite2D
 
+# TAMBAHKAN FUNGSI INI
+func _ready() -> void:
+	# Menambahkan Player ke grup "actors" agar bisa dideteksi oleh NPC
+	add_to_group("actors")
+
 func _physics_process(delta):
 	var velocity = Vector2.ZERO
 
@@ -23,7 +28,6 @@ func _physics_process(delta):
 	else:
 		anim_sprite.stop()
 
-	# Update velocity property lalu panggil move_and_slide()
 	self.velocity = velocity
 	move_and_slide()
 

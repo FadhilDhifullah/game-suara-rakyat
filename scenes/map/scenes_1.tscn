@@ -1409,6 +1409,7 @@ region_enabled = true
 region_rect = Rect2(264.546, 145, 180.909, 149.091)
 
 [node name="Player" type="CharacterBody2D" parent="."]
+z_index = 1
 position = Vector2(290, 108)
 script = ExtResource("6_llt35")
 

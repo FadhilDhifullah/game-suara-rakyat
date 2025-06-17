@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Game Suara Rakyat"
-run/main_scene="uid://dae6jiri11bfy"
+run/main_scene="uid://ba6c8dxh2hv1j"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -25,6 +25,7 @@ NavigationManager="*res://scripts/navigation_manager.gd"
 
 window/size/viewport_width=1920
 window/size/viewport_height=1080
+window/size/mode=2
 window/stretch/mode="canvas_items"
 
 [input]

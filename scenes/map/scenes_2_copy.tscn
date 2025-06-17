@@ -41,7 +41,7 @@
 size = Vector2(212.371, 154.429)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bhst7"]
-size = Vector2(242.594, 125)
+size = Vector2(186.297, 125)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_khpgy"]
 size = Vector2(48, 52)
@@ -681,14 +681,14 @@ shape = SubResource("RectangleShape2D_xm1x0")
 [node name="StaticBody2D" type="StaticBody2D" parent="Buildings/Tesla"]
 position = Vector2(-25, 273)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Buildings/Tesla/StaticBody2D"]
-position = Vector2(1167.7, -5)
-shape = SubResource("RectangleShape2D_bhst7")
-
 [node name="Sprite2D2" type="Sprite2D" parent="Buildings/Tesla/StaticBody2D"]
-position = Vector2(1166, 4)
-scale = Vector2(0.612379, 0.5048)
+position = Vector2(1141, 25)
+scale = Vector2(0.44419, 0.4184)
 texture = ExtResource("4_r4dvo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Buildings/Tesla/StaticBody2D"]
+position = Vector2(1132.85, -2)
+shape = SubResource("RectangleShape2D_bhst7")
 
 [node name="Market" type="Node2D" parent="Buildings"]
 position = Vector2(-117, -9)
@@ -1074,6 +1074,7 @@ region_enabled = true
 region_rect = Rect2(264.546, 145, 180.909, 149.091)
 
 [node name="Player" type="CharacterBody2D" parent="."]
+z_index = 1
 position = Vector2(290, 108)
 script = ExtResource("12_cu4i0")
 
@@ -1091,6 +1092,7 @@ position = Vector2(-51, 206)
 zoom = Vector2(3, 3)
 
 [node name="NPCs" type="Node2D" parent="."]
+z_index = 1
 
 [node name="NPC_Story" type="Node2D" parent="NPCs"]
 
@@ -1206,7 +1208,7 @@ position = Vector2(-0.5, 2)
 shape = SubResource("RectangleShape2D_ex086")
 
 [node name="NPC_2" type="CharacterBody2D" parent="NPCs/NPC_Wander"]
-position = Vector2(304, 433)
+position = Vector2(189, 471)
 script = ExtResource("47_apw1o")
 npc_track_layer_path = NodePath("../../../GameTileMap/Tileset/npc_track")
 
